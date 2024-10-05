@@ -166,6 +166,31 @@ To create a line break or new line,  end a line with two or more spaces, and the
   - aaaa
   - bbbb
 
+### Code
+
+`Use`code`to show code`
+
+```markdown
+Use ``` to build a code block
+```
+
+```markdown
+```c
+int main()
+{
+    return 0;
+}
+```
+
+```
+
+```c
+int main()
+{
+    return 0;
+}
+```
+
 ## Lab Structure
 
 In the labs, you will be required to do the following:
@@ -190,13 +215,6 @@ Perhaps here's some suggestions:
 In the programming exercise part, you will be asked to write good code in `MATLAB` , `C` and `C++`.
 
 ### C
-
-```c
-int main()
-{
-    return 0;
-}
-```
 
 ### MATLAB
 
