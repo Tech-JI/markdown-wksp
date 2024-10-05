@@ -182,8 +182,6 @@ int main()
 }
 ```
 
-```
-
 ```c
 int main()
 {
