@@ -24,7 +24,7 @@ G --> GMean
 M --> MMean
 ```
 
-![iceberg](ViewIceberg.svg)
+![iceberg](ViewsIceberg.svg)
 
 > By Traced by User:Jc86035 - Traced from File:ViewsIceberg.jpg, by User:Hyperir, CC BY-SA 3.0, <https://commons.wikimedia.org/w/index.php?curid=31633159>
 
