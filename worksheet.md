@@ -136,6 +136,12 @@ To create a line break or new line,  end a line with two or more spaces, and the
   - Note: `A*B*C` is OK, `A_B_C` is not OK.
 - Bold and Italic: `***` or `**_` or `*__` or `___`.
 
+### Strikethrough
+
+`~~Wrong Text~~`
+
+~~Wrong Text~~
+
 ### Blockquote
 
 ```markdown
@@ -171,80 +177,148 @@ To create a line break or new line,  end a line with two or more spaces, and the
 `Use`code`to show code`
 
 ```markdown
-Use ``` to build a code block
+Use ``` to build a code block, add the language name after the first ``` to configure the language
 ```
+
+```c
+int main()
+{
+    return 0;
+}
+```
+
+### Table
 
 ```markdown
-```c
-int main()
-{
-    return 0;
-}
+| Syntax      | Description |
+| ----------- | ----------- |
+| Header      | Title       |
+| Paragraph   | Text        |
 ```
 
-```c
-int main()
-{
-    return 0;
-}
-```
-
-## Lab Structure
-
-In the labs, you will be required to do the following:
-
-1. Skills
-2. _Programming Exercises_ (**Basic Exercises** and _**Advanced Exercises**_)
-3. Demo projects
+| Syntax      | Description |
+| ----------- | ----------- |
+| Header      | Title       |
+| Paragraph   | Text        |
 
 You can create a table by some tools like [_tables generator_](https://www.tablesgenerator.com/markdown_tables).
 
-## ~~_Survive_~~ Learning well in the lab
+### Horizontal Rule
 
-Perhaps here's some suggestions:
+`---` or `***` or `------------`
 
-- Follow the lab instructions.
-- Seek for help if necessary.
-  - If you got stuck on one task, jump it and ask after the lab.
-- Finish the lab exercises in time.
+> Might fail according to the editor
 
-## Sample Code
+-------------
 
-In the programming exercise part, you will be asked to write good code in `MATLAB` , `C` and `C++`.
+### Link
 
-### C
+`[Name](url)`
 
-### MATLAB
+[Google](www.google.com)
 
-```matlab
-function d=density(r,c,T) %Think about what this function mean!
-    G=6.674*10^-11;
-    V=4*pi/3*(c/(2*pi))^3;
-    M=4*pi^2*r^3/(G*T^2);
-    d=M/V;
-end
-```
+Turn address into a link: `<www.google.com>` / `<name@sjtu.edu.cn>`
 
-## Work with $\LaTeX$
+<name@sjtu.edu.cn>
+
+> Might be different according to the editor
+
+### Image
+
+`![alt text](file path/url)`
+
+e.g.: `![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)`
+
+![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
+
+### Work with $\LaTeX$
 
 **There is no standard how to insert $\LaTeX$ content. Some editors use `$` while some use `$$` and some editors use other methods. Test in your editor. Piazza use `$$`.**
 
 You can use $\LaTeX$ in the markdown file. For example, $$1 + 2 + 3 + \cdots + 100 = \frac{(1+100)\times 100}{2} = 5050$$
 
----
+### Graph
 
-## Check list
+If your editor support mermaid:
 
-- [ ] Welcome
-  - [x] headings (different levels)
-  - [x] images
-  - [x] quote
-  - [x] table
-  - [x] link
-  - [x] list
-  - [x] bold & italic & strikethrough
-  - [x] code
-    - [x] Inline
-    - [x] Block
-  - [x] $\LaTeX$
-  - [ ] task list & horizontal line
+Following [Code Section](#code), configure the language to be `mermaid`, at the first line, choose the type of the graph `graph TB`, `flowchart LR`, etc.
+
+```mermaid
+graph TB
+A --> B
+A --> C
+B --> D
+B --> E
+E --> F
+F --> A
+```
+
+> Due to display issues, check the raw file to see how mermaid works.
+
+### Escaping Character
+
+To display a literal character that would otherwise be used to format text in a Markdown document, add a backslash (`\`) in front of the character.
+
+### Footnote
+
+```markdown
+Here's a simple footnote.[^1]
+[^1]: This is a simple footnote.
+```
+
+Here's a simple footnote.[^1]
+[^1]: This is a simple footnote.
+
+> Might fail according to the editor
+
+### Emoji
+
+`:joy:`
+
+:joy:
+
+[List of emoji shortcodes](https://gist.github.com/rxaviers/7360908)
+
+### Checklist
+
+```markdown
+- [x] Task 1
+- [ ] Task 2
+```
+
+- [x] Task 1
+- [ ] Task 2
+
+The checklist below is actually the real checklist that we hope you can master before leaving this workshop.
+
+- [ ] Get an editor!
+  - [ ] headings (different levels)
+  - [ ] images
+  - [ ] quote
+  - [ ] table
+  - [ ] link
+  - [ ] list
+  - [ ] bold & italic & strikethrough
+  - [ ] code
+    - [ ] Inline
+    - [ ] Block
+  - [ ] $\LaTeX$
+  - [ ] graph
+  - [ ] escaping character
+  - [ ] task list
+  - [ ] horizontal line
+  - [ ] emoji
+  - [ ] footnote
+
+### HTML (not very useful)
+
+Many Markdown applications allow you to use HTML tags in Markdown-formatted text.
+This is helpful if you prefer certain HTML tags to Markdown syntax.
+
+`<mark>highlight text<\mark>`: <mark>highlight text<\mark>
+
+## References
+
+- Zixiang Lin, Markdown & LaTeX Workshop, SSTIA, 2023.
+- Zining Wang, Lab 1 Worksheet, ENGR1010J 24SU.
+- [Markdown Guide](https://www.markdownguide.org/)
