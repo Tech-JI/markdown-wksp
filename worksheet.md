@@ -221,6 +221,10 @@ Turn address into a link: `<www.google.com>` / `<name@sjtu.edu.cn>`
 
 <name@sjtu.edu.cn>
 
+`[Name](#section-name)`
+
+[Link to another section](#what-is-markdown)
+
 > Might be different according to the editor
 
 ### Image
