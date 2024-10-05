@@ -6,7 +6,13 @@ This is both a manual and a worksheet for Markdown. Feel free to do changes to t
 
 ![sjtu](http://vi.sjtu.edu.cn/uploads/files/22fc9c46e0998e2454d64f7eda901595-d2c02ba527abb94ad97653e36bbac8a1.png)
 
-Hint: The URL for this image is <http://vi.sjtu.edu.cn/uploads/files/22fc9c46e0998e2454d64f7eda901595-d2c02ba527abb94ad97653e36bbac8a1.png>
+The URL for this image is <http://vi.sjtu.edu.cn/uploads/files/22fc9c46e0998e2454d64f7eda901595-d2c02ba527abb94ad97653e36bbac8a1.png>
+
+| Date      | Time  |
+| ------------ | --------------------- |
+| Oct. 6th | UTC + 8 20:00 PM |
+
+***
 
 ## What is Markdown?
 
@@ -50,7 +56,7 @@ The best way to get started with Markdown is to use it. That’s easier than eve
 
 You don’t even need to download anything. There are several online Markdown editors that you can use to try writing in Markdown. [Dillinger](https://dillinger.io/) is one of the best online Markdown editors. Just open the site and start typing in the left pane. A preview of the rendered document appears in the right pane.
 
-You’ll probably want to keep the Dillinger website open as you read through this guide. That way you can try the syntax as you learn about it. After you’ve become familiar with Markdown, you may want to use a Markdown application that can be installed on your desktop computer or mobile device, which we will provide soon.
+You’ll probably want to keep the Dillinger website open as you read through this guide. That way you can try the syntax as you learn about it. After you’ve become familiar with Markdown, you may want to use a Markdown application that can be installed on your desktop computer or mobile device, which we will provide [here](#recommended-editor).
 
 ## How Does it Work?
 
@@ -75,11 +81,90 @@ To summarize, this is a four-part process:
 
 From your perspective, the process will vary somewhat depending on the application you use. For example, Dillinger essentially combines steps 1-3 into a single, seamless interface — all you have to do is type in the left pane and the rendered output magically appears in the right pane. But if you use other tools, like a text editor with a static website generator, you’ll find that the process is much more visible.
 
-| Name      | Student ID   | Email Address         |
-| --------- | ------------ | --------------------- |
-| Zhang San | 333333333333 | <zhang.san@sjtu.edu.cn> |
-| Li Si     | 444444444444 | <li.si@sjtu.edu.cn>     |
-| `name`    | `student id` | `email address`       |
+## Recommended Editor
+
+- Typora (WYSIWYG Style)
+- iA Writer
+- Atom
+- Notion
+- Obsidian
+- VS Code
+- GitHub
+- Online Editors (If you really want one)
+  - [Dillinger](https://dillinger.io/)
+  - [SJTU Markdown](https://notes.sjtu.edu.cn/)
+
+---
+
+## Basic Syntax
+
+You can find most of the syntax above, and you're very encouraged to play around these syntax.
+
+### Heading
+
+`##..##(n) Heading` means Heading with level n. n can be 1~6.
+
+**Note:** There is a space between the number signs (#) and Heading name.
+
+### Paragraph
+
+Paragraph 1...
+
+Paragraph 2...
+
+Actually there is a blank line between two paragraphs.
+
+```markdown
+Paragraph 1...
+
+Paragraph 2...
+
+Actually there is a blank line between two paragraphs.
+```
+
+**Note:** Do not try to indent paragraphs with spaces or tabs. Some editors like Typora support indentation.
+
+### Line Break
+
+To create a line break or new line,  end a line with two or more spaces, and then type `return`.
+
+### Emphasis
+
+- Bold: `**bold text**` or `__bold text__`.
+  - **Note**: `A**B**C` is OK, `A__B__C` is not OK.
+- Italic: `*italicize text*` or `_italicize text_`.
+  - Note: `A*B*C` is OK, `A_B_C` is not OK.
+- Bold and Italic: `***` or `**_` or `*__` or `___`.
+
+### Blockquote
+
+```markdown
+> Paragraph 1
+>
+> > Paragraph 2
+```
+
+> Paragraph 1
+>
+> > Paragraph 2
+
+### List
+
+```markdown
+- Ordered List
+  a. aaaa
+  b. bbbb
+- Unordered List
+  - aaaa
+  - bbbb
+```
+
+- Ordered List
+  a. aaaa
+  b. bbbb
+- Unordered List
+  - aaaa
+  - bbbb
 
 ## Lab Structure
 
