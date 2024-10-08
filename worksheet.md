@@ -226,26 +226,26 @@ Turn address into a link: `<www.google.com>` / `<name@sjtu.edu.cn>`
 [Link to another section](#what-is-markdown)
 
 ```markdown
-[id2]: http://example.com/  "Optional Title Here"
+[link label]: #what-is-markdown "Optional Title Here"
 
 ... some other contents here and there ... 
 
-This is [an example] [id] reference-style link. The [link label] [id2] can even be defined above the sentence.
+This is [an example] reference-style link. The [link label] can even be defined above the sentence.
 
 ... some other contents here and there ... 
 
-[id]: http://example.com/  "Optional Title Here"
+[an example]: http://example.com/  "Optional Title Can Go Here"
 ```
 
-[id2]: http://example.com/  "Optional Title Here"
+[link label]: #what-is-markdown  "Optional Title Here"
 
 ... some other contents here and there ...
 
-This is [an example] [id] reference-style link. The [link label] [id2] can even be defined above the sentence.
+This is [an example] reference-style link. The [link label] can even be defined above the sentence.
 
 ... some other contents here and there ...
 
-[id]: http://example.com/  "Optional Title Here"
+[an example]: http://example.com/  "Optional Title Can Go Here"
 
 > Might be different according to the editor
 
@@ -307,7 +307,6 @@ If you want a comment that is strictly for yourself (readers of the converted do
 
 [comment]: # (You can't see me!)
 ```
-
 
 ### Footnote
 
