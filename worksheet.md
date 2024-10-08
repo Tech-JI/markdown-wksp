@@ -308,6 +308,8 @@ If you want a comment that is strictly for yourself (readers of the converted do
 [comment]: # (You can't see me!)
 ```
 
+Then the comment is invisible, unless you refer to the link label.
+
 ### Footnote
 
 ```markdown
