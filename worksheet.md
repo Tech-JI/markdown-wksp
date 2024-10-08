@@ -225,6 +225,28 @@ Turn address into a link: `<www.google.com>` / `<name@sjtu.edu.cn>`
 
 [Link to another section](#what-is-markdown)
 
+```markdown
+[id2]: http://example.com/  "Optional Title Here"
+
+... some other contents here and there ... 
+
+This is [an example] [id] reference-style link. The [link label] [id2] can even be defined above the sentence.
+
+... some other contents here and there ... 
+
+[id]: http://example.com/  "Optional Title Here"
+```
+
+[id2]: http://example.com/  "Optional Title Here"
+
+... some other contents here and there ...
+
+This is [an example] [id] reference-style link. The [link label] [id2] can even be defined above the sentence.
+
+... some other contents here and there ...
+
+[id]: http://example.com/  "Optional Title Here"
+
 > Might be different according to the editor
 
 ### Image
@@ -262,6 +284,30 @@ F --> A
 ### Escaping Character
 
 To display a literal character that would otherwise be used to format text in a Markdown document, add a backslash (`\`) in front of the character.
+
+### Comment
+
+```markdown
+Some meaningful text <!-- This is a comment -->
+<!---
+your comment goes here
+and here in multiple lines
+-->
+```
+<!---
+your comment goes here
+and here in multiple lines
+-->
+However, it will result in the comments being included in the output HTML, even if they are not displayed.
+
+If you want a comment that is strictly for yourself (readers of the converted document should not be able to see it, even with "view source") you could (ab)use the [link labels](#link) (for use with reference style links):
+
+```markdown
+(an empty line before the comment)
+
+[comment]: # (You can't see me!)
+```
+
 
 ### Footnote
 
