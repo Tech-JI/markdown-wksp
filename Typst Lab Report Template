@@ -1,5 +1,1 @@
 https://github.com/wznmickey/JI_Lab_Report_typst_template
-
-If you want to use Vscode to edit Typst, and have a preview in Darkmode, 
-use Latex Workshop extension to view the PDF, 
-and set `Latex-workshop › View › Pdf: Invert` to be 0.92
