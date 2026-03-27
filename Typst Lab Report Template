@@ -1,1 +1,5 @@
 https://github.com/wznmickey/JI_Lab_Report_typst_template
+
+If you want to use it in Vscode, use Vscode Extension "Tinymist Typst", 
+If you want the preview to be Darkmode, find "Tinymist › Preview: Invert Colors"
+set the value to be "always"
